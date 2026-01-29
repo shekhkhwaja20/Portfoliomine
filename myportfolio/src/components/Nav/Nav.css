@@ -22,7 +22,7 @@ nav ul a:hover{
     color: aqua;
     border-bottom:2px solid white;
 }
-ul{
+nav ul{
    display: flex;
    align-items: center;
    justify-content: center;
@@ -46,6 +46,7 @@ nav h1{
     flex-direction: column;
     display: none;
     transition: all 0.5s;
+    cursor: pointer;
 }
 .ham{
     width: 40px;
