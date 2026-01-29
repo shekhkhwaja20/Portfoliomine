@@ -8,10 +8,12 @@ function Nav() {
     <nav>
         <h1>PORTFOLIO</h1>
         <ul className='desktopmenu'>
-           <Link to="home"  activeClass='active'spy={true} smooth={true} duration={500}><li>Home</li></Link>
-            <Link to="Contacts"activeClass='active'spy={true} smooth={true} duration={500}><li>Contacts</li></Link>
-           <Link to="about" activeClass='active'spy={true} smooth={true} duration={500}><li>About</li></Link>
-           <Link to="Projects"activeClass='active'spy={true} smooth={true} duration={500}><li>Projects</li></Link>
+           <Link to="home"  activeClass='active'spy={true} smooth={true} duration={500}><li>HOME</li></Link>
+            <Link to="about" activeClass='active'spy={true} smooth={true} duration={500}><li>ABOUT</li></Link>
+            <Link to="Projects"activeClass='active'spy={true} smooth={true} duration={500}><li>PROJECTS</li></Link>
+            <Link to="Contacts"activeClass='active'spy={true} smooth={true} duration={500}><li>CONTACTS</li></Link>
+          
+           
         </ul>
         <div className="hamburger" ref={menu} onClick={()=>{
           mobile.current.classList.toggle("activemobile")

@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import me from "../../assets/myimg.png"
-import TypingEffect from "react-typing-effect"
+import TypingEffect, { Typewriter } from "react-simple-typewriter"
 function Home() {
   return (
     <div id="home">
@@ -10,15 +10,17 @@ function Home() {
               <div className="line1">I'M </div>
               <div className="line2">SHEKH KHWAJA</div>
               <div className="line3">
-                <TypingEffect
-                text={["WEB DEVELOPER","SOFTWARE DEVELOPER","HEARTHACKER"]}
-                 speed={100}
-                 eraseSpeed={50}
-                 eraseDelay={1000}
-                 typingDelay={500}
-                 cursor='_'
-                />
+                <Typewriter
+                 words={['WEB DEVELOPER',"SOFTWARE DEVELOPER","HEART HACKER"]}
+                 loop={0}
+                cursor
+                 cursorStyle="_"
+                 typeSpeed={70}
+                 deleteSpeed={50}
+                 delaySpeed={1000}
+                 />
               </div>
+              <button>HIRE ME</button>
             </div>
 
           </div>
